@@ -1,5 +1,8 @@
 a = 2
 b = 3
-c = a + b
+d = None;
+e = '10';
+
+c = a + b + int(e);  # + d wirft einen Fehler
 print(c)
 
