@@ -1,0 +1,12 @@
++ dictonarys /
++ csv/excel import /
++ datenbankanbindung sqlite /
++ daten parsen mit regexp
++ configparser /
++ raspberry
++ mail versand aus prg /
++ bilder resizen
++ betriebssysteminteraktion files kopieren etc
+( objektorientierung )
+( diagramm numpy )
+

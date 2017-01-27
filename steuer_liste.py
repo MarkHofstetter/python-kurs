@@ -33,13 +33,24 @@ def SteuerGehaltsstufe(steuersatz, untergrenze, obergrenze):
 einkommen = int(input('Bitte Einkommen eingeben: '))
 # einkommen = 40000  # Steuer: 10080
 steuer = 0
- 
-steuer += SteuerGehaltsstufe(0.25, 11000, 18000)
-steuer += SteuerGehaltsstufe(0.35, 18000, 25000)
-steuer += SteuerGehaltsstufe(0.35, 25000, 31000)
-steuer += SteuerGehaltsstufe(0.42, 31000, 60000) 
-steuer += SteuerGehaltsstufe(0.48, 60000, 90000) 
-steuer += SteuerGehaltsstufe(0.50, 90000, 1000000)
-steuer += SteuerGehaltsstufe(0.55, 1000000, float('inf')) 
-# print("Die Steuer ist {0:8.2f}".format(steuer))
+
+steuerklassen = [
+     [0    ,        0   ],
+     [11000,        0   ],
+     [18000,        0.25],
+     [25000,        0.35],
+     [31000,        0.35], 
+     [60000,        0.42],
+     [90000,        0.48],
+     [1000000,      0.50],
+     [float('inf'), 0.55]
+     ]
+
+untergrenze = 0     
+for steuerklasse in steuerklassen:
+  ## print(steuerklasse[0], steuerklasse[1])
+  steuer += SteuerGehaltsstufe(steuerklasse[1], untergrenze, steuerklasse[0])
+  untergrenze = steuerklasse[0]
+
+  # print("Die Steuer ist {0:8.2f}".format(steuer))
 print("Die Steuer betraegt %8.2f" % steuer)

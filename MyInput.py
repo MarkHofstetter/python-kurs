@@ -5,3 +5,5 @@ def getIntInput():
    except:
      print("Falscher Wert")
      return False
+     
+maximaleLaenge = 5     
