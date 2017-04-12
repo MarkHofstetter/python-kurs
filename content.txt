@@ -7,6 +7,7 @@
 + mail versand aus prg /
 + bilder resizen
 + betriebssysteminteraktion files kopieren etc
++ API/webscrapping
 ( objektorientierung )
 ( diagramm numpy )
 
