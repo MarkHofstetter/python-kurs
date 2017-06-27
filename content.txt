@@ -1,13 +1,17 @@
-+ dictonarys /
-+ csv/excel import /
-+ datenbankanbindung sqlite /
++ qt
++ debugger
++ dictonarys
++ csv/excel import 
++ datenbankanbindung sqlite
 + daten parsen mit regexp
-+ configparser /
++ configparser
 + raspberry
 + mail versand aus prg /
 + bilder resizen
 + betriebssysteminteraktion files kopieren etc
 + API/webscrapping
++ bilder resizen 
++ betriebssysteminteraktion files kopieren etc 
 ( objektorientierung )
 ( diagramm numpy )
 
