@@ -9,7 +9,7 @@ teilnehmer = {
     'Mark': 1975,    
 }
 
-
+teilnehmer_reverse = dict( zip(teilnehmer.values(), teilnehmer.keys()) )
 
 '''
 userinput = input('Name: ')

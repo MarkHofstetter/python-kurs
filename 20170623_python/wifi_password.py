@@ -1,6 +1,6 @@
 import random
 
-def generate_password(sentence, min_length = 3, randomness = True ):  
+def generate_password(sentence, min_length = 3, randomness = True ):      
     words = sentence.split()
     password = ''
     sentence = ''

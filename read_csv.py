@@ -34,6 +34,8 @@ jahr = 2003
 for preis in werte['Steinkohle (Industrie)/t']:
   print(jahr, preis)
   conn.execute('insert into preise(jahr, preis) values (?,?)', (jahr, preis))
+  
+  
   jahr += 1
 
 conn.commit()  

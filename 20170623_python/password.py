@@ -7,11 +7,11 @@
 
 import wifi_password
 # from wifi_password import generate_password
-        
+
 # main
   
 input_sentence = input('bitte einen Satz eingeben: ')
-password = wifi_password.generate_password(sentence = input_sentence)
+password = wifi_password.generate_password(sentence = input_sentence, min_length = 5)
 # password = generate_password(sentence)
 print(password)
 

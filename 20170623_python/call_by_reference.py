@@ -1,6 +1,6 @@
 def fkt(a):
     print(a)
-    a[0] = 23
+    a = 23
     
 def list_fkt(l):
     print(l)
@@ -9,17 +9,20 @@ def list_fkt(l):
 def fkt(a,b):
     print(a,b)
     a = 23
+    return (a,b)
     
-def kwfkt(**kwargs):
+def kwfkt(z, **kwargs):
+    print(z)
     print(kwargs)
     print(kwargs['b'])
     
 b = 12    
-fkt(b,2)    
+e,f = fkt(b,2)    
 print(b)
+print('2 param', e, f)
 
 c = [1,2,3]
 list_fkt(list(c))
 print(c)
 
-kwfkt(a=1, b=3, c={'g':8})
+kwfkt(42, a=1, b=3, c={'g':8})
